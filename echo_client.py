@@ -3,7 +3,7 @@ import asyncio
 
 @asyncio.coroutine
 def tcp_echo_client(message, loop):
-    reader, writer = yield from asyncio.open_connection('127.0.0.1', 8888,
+    reader, writer = yield from asyncio.open_connection('daresim.tk',  5001,
                                                         loop=loop)
 
     print('Send: %r' % message)
